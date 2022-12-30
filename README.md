@@ -7,10 +7,27 @@ Smooth UX, routes were built with the back button in mind.
 
 # Contents
 
-1. [Technologies](#Technologies)
-2. [Features](#features)
-3. [Screenshots](#screenshots)
-4. [Feedback](#feedback)
+1. [Installation](#Installation)
+2. [Technologies](#Technologies)
+3. [Features](#features)
+4. [Screenshots](#screenshots)
+5. [Feedback](#feedback)
+
+## Installation
+
+pnpm
+```
+pnpm i
+pnpm build
+pnpm preview
+```
+
+npm
+```
+npm i
+npm run build
+npm run preview
+```
 
 ## Technologies
 
