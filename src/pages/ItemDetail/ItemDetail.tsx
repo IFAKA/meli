@@ -1,5 +1,6 @@
-import { Breadcrumb, Spinner } from "@/components"
+import { Breadcrumb, ErrorFallback, Spinner } from "@/components"
 import { useItemDetail } from "@/hooks"
+import { ErrorBoundary } from "react-error-boundary"
 
 const ItemDetail = () => {
   const {
@@ -13,7 +14,7 @@ const ItemDetail = () => {
     categories,
   } = useItemDetail()
   return (
-    <>
+    <ErrorBoundary FallbackComponent={ErrorFallback}>
       {loading ? (
         <Spinner />
       ) : (
@@ -43,7 +44,7 @@ const ItemDetail = () => {
           </div>
         </>
       )}
-    </>
+    </ErrorBoundary>
   )
 }
 export default ItemDetail
