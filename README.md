@@ -1,6 +1,4 @@
-![TXT](/public/docs/txt.png)
-
-# TXT
+# MELI
 
 Frontend Mercadolibre search application.
 Once you open the app, after a register the service worker, it will be able offline.
